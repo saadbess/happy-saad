@@ -111,7 +111,7 @@ html, body {
 .homepage__content .clients__list img {
     width: 50%;
     display: block;
-    margin: 50px auto;
+    margin: 25px auto;
 }
 .homepage__footer ul li {
     padding: 1em;
@@ -144,7 +144,7 @@ html, body {
     display: none;
 }
 .homepage__bg-modal-content {
-    width: 80%;
+    width: 90%;
     background-color: #fff;
     border-radius: 4px;
     text-align: center;
@@ -162,7 +162,7 @@ html, body {
 }
 .homepage__bg-modal-content input,
 .homepage__bg-modal-content textarea {
-    width: 60%;
+    width: 75%;
     display: block;
     background: #e8ebed;
     color: #576366;
