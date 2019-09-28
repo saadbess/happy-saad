@@ -65,9 +65,11 @@
     <div class="homepage__bg-modal">
         <div class="homepage__bg-modal-content">
             <div class="close">+</div>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
+            <form method="POST" data-netlify="true">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <div data-netlify-recaptcha="true"></div>
                 <a href="" class="action-btn">Submit</a>
             </form>
         </div>

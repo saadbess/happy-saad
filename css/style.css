@@ -95,7 +95,7 @@ html, body {
 .homepage__content .clients h2 {
     font-size: 0.8em;
     font-weight: 300;
-    margin-bottom: 1em;
+    margin: 2em 0;
     text-align: center;
 }
 .homepage__content .clients__list {
@@ -152,7 +152,8 @@ html, body {
     transform: rotate(45deg);
     cursor: pointer;
 }
-.homepage__bg-modal-content input {
+.homepage__bg-modal-content input,
+.homepage__bg-modal-content textarea {
     width: 60%;
     display: block;
     background: #e8ebed;
@@ -205,6 +206,7 @@ html, body {
         height: 50vh;
     }
     .homepage__bg-modal-content input,
+    .homepage__bg-modal-content textarea,
     .homepage__bg-modal-content .action-btn {
         font-size: 1.5em;
     }
