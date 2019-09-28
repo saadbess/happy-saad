@@ -37,7 +37,7 @@ html, body {
         "content"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 130px 800px 250px; 
+    /* grid-template-rows: 130px 800px 250px;  */
 }
 .homepage__content,
 .homepage__sidebar,
