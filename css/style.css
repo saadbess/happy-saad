@@ -75,6 +75,8 @@ html, body {
     padding: 0.5em 2em;
     margin: 1em 0;
     transition: 0.3s;
+    border: 0;
+    cursor: pointer;
 }
 .homepage__content .action-btn:hover,
 .homepage__bg-modal-content .action-btn:hover {
