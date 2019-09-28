@@ -153,8 +153,7 @@ html, body {
     cursor: pointer;
 }
 .homepage__bg-modal-content input,
-.homepage__bg-modal-content textarea,
-.homepage__bg-modal-content .recaptcha {
+.homepage__bg-modal-content textarea {
     width: 60%;
     display: block;
     background: #e8ebed;
