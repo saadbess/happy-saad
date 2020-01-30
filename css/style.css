@@ -25,7 +25,8 @@ html, body {
 }
 .homepage__footer {
     grid-area: footer;
-    background: white;
+    color: #fff;
+    background: #748092;
 }
 .homepage__container {
     font-size: 1.5em;
@@ -37,7 +38,6 @@ html, body {
         "content"
         "footer";
     grid-template-columns: 1fr;
-    /* grid-template-rows: 130px 800px 250px;  */
 }
 .homepage__content,
 .homepage__sidebar,
@@ -49,6 +49,11 @@ html, body {
     margin: 0 auto;
     text-align: center;
 }
+.homepage__content .hero__lead {
+    margin-bottom: 1em;
+    color: #515a67;
+    font-size: 0.9em;
+}
 .homepage__sidebar .logo {
     width: 30%;
     fill: #fff;
@@ -56,7 +61,7 @@ html, body {
 .homepage__content h1 {
     font-size: 1.2em;
     font-weight: 300;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
 }
 .homepage__content p {
     font-size: 0.8em;
@@ -89,18 +94,21 @@ html, body {
     flex-direction: row;
     justify-content: center;
 }
-.homepage__content .clients {
+.homepage__content .clients,
+.homepage__content .skills {
     max-width: 960px;
     margin: 0 auto;
     text-align: center;
 }
-.homepage__content .clients h2 {
+.homepage__content .clients h2,
+.homepage__content .skills h2 {
     font-size: 0.8em;
     font-weight: 300;
     margin: 2em 0;
     text-align: center;
 }
-.homepage__content .clients__list {
+.homepage__content .clients ul,
+.homepage__content .skills ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     justify-items: center;
@@ -108,8 +116,16 @@ html, body {
     grid-row-gap: 0px;
     align-self: center;
 }
-.homepage__content .clients__list img {
+.homepage__content .skills ul {
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+}
+.homepage__content .clients img {
     width: 50%;
+    display: block;
+    margin: 25px auto;
+}
+.homepage__content .skills i {
+    font-size: 250%;
     display: block;
     margin: 25px auto;
 }
@@ -117,18 +133,17 @@ html, body {
     padding: 1em;
 }
 .homepage__footer ul li a {
-    color: #c1c6ce;
+    color: #fff;
     transition: 0.3s; 
 }
 .homepage__footer ul li a:hover {
     color: #373d46; 
 }
-.homepage__footer ul li .fa {
+.homepage__footer i {
     font-size: 2em;
 }
 .homepage__footer .copyright {
-    font-size: 0.5em;
-    color: #c1c6ce;
+    font-size: 0.6em;
     text-align: center;
 }
 .homepage__bg-modal {
@@ -201,7 +216,8 @@ html, body {
     .homepage__content p {
         width: 60%;
     }
-    .homepage__content .clients h2 {
+    .homepage__content .clients h2,
+    .homepage__content .skills h2 {
         margin: 2em auto;
         text-align: left;
     }

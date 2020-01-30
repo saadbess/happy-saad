@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Happy Saad | Personal Site of Front-End Engineer Saad Koubeissi</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Playfair+Display:400,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,7 +28,8 @@
         <div class="homepage__content">
             <section class="hero">
                 <div class="hero__content">
-                    <h1>Hey! I'm Saad,<br> Front-End Web Engineer</h1>
+                    <h1>Hey! I'm Saad</h1>
+                    <p class="hero__lead">Tech Consultant | Front-End Web Engineer</p>
                     <p>Currently contracting around London, producing solutions for some big brands. Most recently
                         working with <em>React.js</em> and <em>Serverless Architecture</em>.</p>
                     <a class="action-btn" id="button" href="#">Contact me</a>
@@ -34,7 +37,7 @@
             </section>
             <section class="clients">
                 <h2>I've worked with...</h2>
-                <ul class="clients__list">
+                <ul>
                     <li><img src="img/ebay.png" alt="eBay Logo"></li>
                     <li><img src="img/gumtree.png" alt="Gumtree Logo"></li>
                     <li><img src="img/virgin-active.png" alt="Virgin Active Logo"></li>
@@ -48,16 +51,29 @@
                     <li><img src="img/stubhub.png" alt="Stubhub Logo"></li>
                 </ul>
             </section>
+            <section class="skills">
+                <h2>Technology I use...</h2>
+                <ul>
+                    <li><i class="fab fa-html5" aria-hidden="true"></i></li>
+                    <li><i class="fab fa-css3" aria-hidden="true"></i></li>
+                    <li><i class="fab fa-js" aria-hidden="true"></i></li>
+                    <li><i class="fab fa-react" aria-hidden="true"></i></li>
+                    <li><i class="fab fa-vuejs" aria-hidden="true"></i></li>
+                    <li><i class="fab fa-wordpress" aria-hidden="true"></i></li>
+                    <li><i class="fab fa-aws" aria-hidden="true"></i></li>
+                    <li><i class="fas fa-universal-access" aria-hidden="true"></i></li>
+                </ul>
+            </section>
         </div>
         <div class="homepage__footer">
             <footer>
                 <ul>
-                    <li><a href="https://github.com/saadbess" target="_blank"><i class="fa fa-github"
+                    <li><a href="https://github.com/saadbess" target="_blank"><i class="fab fa-github"
                                 aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/saadbess/" target="_blank"><i class="fa fa-linkedin"
+                    <li><a href="https://www.linkedin.com/in/saadbess/" target="_blank"><i class="fab fa-linkedin"
                                 aria-hidden="true"></i></a></li>
                 </ul>
-                <div class="copyright">&copy; Happy Saad 2019</div>
+                <div class="copyright">&copy; Happy Saad 2020</div>
             </footer>
         </div>
     </div>
@@ -75,15 +91,7 @@
         </div>
     </div>
 
-    <script>
-        document.getElementById('button').addEventListener('click', function () {
-            document.querySelector('.homepage__bg-modal').style.display = 'flex';
-        });
-
-        document.querySelector('.close').addEventListener('click', function () {
-            document.querySelector('.homepage__bg-modal').style.display = 'none';
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
